@@ -1,0 +1,96 @@
+@use "./config" as *;
+@use "./toggle" as *;
+
+body {
+    height: 100vh;
+    background-color: $neutral200;
+    font-family: "Noto Sans", sans-serif;
+    padding: 5%;
+}
+
+.container {
+    display: flex;
+    background-color: $neutral000;
+    width: 100%;
+    border-radius: 10px;
+    border: 0.5px solid $neutral300;
+    box-shadow: 0 2px $neutral300;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.toggle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $neutral100;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+.title {
+    padding: 30px 0;
+    h1 {
+        font-size: 2rem;
+        font-weight: $f_bold;
+        text-align: center;
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    button {
+        border-radius: 25px;
+        padding: 10px 20px;
+        border: 1px solid $neutral300;
+        font-size: 1.5rem;
+        font-weight: $f_light;
+        margin: 5px;
+        background-color: $neutral000;
+    }
+}
+
+.extension.container {
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.data {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.details {
+    h2 {
+        font-weight: $f_bold;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    p {
+        font-weight: $f_light;
+        color: $neutral600;
+        font-size: 1rem;
+    }
+    margin-bottom: 10px;
+}
+.state-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 10px 5px 10px;
+    button {
+        font-size: 1rem;
+        border-radius: 25px;
+        border: 1px solid $neutral300;
+        padding: 8px 15px;
+        background-color: $neutral000;
+        font-weight: $f_light;
+    }
+}
