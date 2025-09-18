@@ -26,6 +26,9 @@
   transition: .4s;
 }
 
+.dark .slider {
+  background-color: hsl(226, 11%, 37%);
+}
 .slider:before {
   position: absolute;
   content: "";
@@ -42,10 +45,16 @@ input:checked + .slider {
   background-color: hsl(3, 77%, 44%);
 }
 
+.dark input:checked+.slider {
+  background-color: hsl(3, 71%, 56%);
+}
 input:focus + .slider {
   box-shadow: 0 0 1px hsl(3, 77%, 44%);
 }
 
+.dark input:focus+.slider {
+  box-shadow: 0 0 1px hsl(3, 71%, 56%);
+}
 input:checked + .slider:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
